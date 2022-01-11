@@ -4,7 +4,7 @@ import requests
 import sys
 
 def gettransactionbyid (txid):
-
+    txid = str(txid)
     url = "https://api.trongrid.io/walletsolidity/gettransactionbyid"
     payload = {"value": txid}
     headers = {
